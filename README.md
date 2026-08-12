@@ -31,3 +31,25 @@ Matplotlib 3.2.1
 BioProEV uses the random forest algorithm MissForest [1,2]:
 
 MissForest v1.0.0 – released on 8 August 2024. 
+
+## Installation
+
+There are two code scripts to run BioProEV. For both, all arguments following the script name must be provided by the user (“data_file” to “file_name).
+
+    • missing_data_filtering.py
+
+python3.12 missing_data_filtering.py data_file sheet gene_column sample_column#1 sample_column#2   threshold   file_path   file_name
+
+where: 
+data_file 		: File with the raw dataset (in .xlsx)
+sheet			: Number of the file sheet with the dataset
+gene_column 		: Number of the column with gene IDs
+sample_column#1	: Number of the column with the first sample data
+sample_column#2 	: Number of the column with the last sample data + 1 (e.g. column 12, so sample_column#2 = 13)
+threshold		: Threshold for deleting most missing data variables (e.g. deletion of variables with more than 50 % of missing values, use 0.6)*
+file_path 		: Path to the folder where you will store the output file
+file_name 		: Name of the output file
+
+* check the outcome datatable for the threshold, it usually works best with rounded values (i.e. 0.6, not 0.63), also the decimals will depend on the number of samples.
+
+* 
