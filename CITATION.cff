@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it as below."
+authors:
+  - family-names: "Miranda"
+    given-names: "Pâmella"
+  - family-names: "G. Marchan Alvarez"
+    given-names: "Jose"
+  - family-names: "Newton"
+    given-names: "Phillip"
+title: "BioProEV"
+version: "1.0.0"
+doi: "10.5281/zenodo.15440849"
+date-released: 2025
+url: "https://github.com/pamella-miranda/BioProEV"
