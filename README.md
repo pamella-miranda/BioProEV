@@ -63,6 +63,6 @@ file_path 	       : Path to the folder where you will store the output file
 file_name 		     : Name of the output file
 ```
 
-* check the outcome datatable for the threshold, it usually works best with rounded values (i.e. 0.6, not 0.63), also the decimals will depend on the number of samples.
+&nbsp;&nbsp;\* check the outcome datatable for the threshold, it usually works best with rounded values (i.e. 0.6, not 0.63), also the decimals will depend on the number of samples.
 
 * 
