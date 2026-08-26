@@ -52,21 +52,16 @@ python3.12  missing_data_filtering.py data_file  sheet  gene_column  sample_colu
 
 where:
 
-data_file 		    : File with the raw dataset (in .xlsx)
-
-sheet			    : Number of the file sheet with the dataset
-
-gene_column 		: Number of the column with gene IDs
-
-sample_column#1	: Number of the column with the first sample data
-
-sample_column#2 	: Number of the column with the last sample data + 1 (e.g. column 12, so sample_column#2 = 13)
-
-threshold		: Threshold for deleting most missing data variables (e.g. deletion of variables with more than 50 % of missing values, use 0.6)*
-
-file_path 		: Path to the folder where you will store the output file
-
-file_name 		: Name of the output file
+```text
+data_file          : File with the raw dataset (in .xlsx)
+sheet              : Number of the file sheet with the dataset
+gene_column        : Number of the column with gene IDs
+sample_column#1    : Number of the column with the first sample data
+sample_column#2    : Number of the column with the last sample data + 1 (e.g. column 12, so sample_column#2 = 13)
+threshold          : Threshold for deleting most missing data variables (e.g. deletion of variables with more than 50 % of missing values, use 0.6)*
+file_path 	       : Path to the folder where you will store the output file
+file_name 		     : Name of the output file
+```
 
 * check the outcome datatable for the threshold, it usually works best with rounded values (i.e. 0.6, not 0.63), also the decimals will depend on the number of samples.
 
