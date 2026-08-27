@@ -139,4 +139,11 @@ Phillip Newton --- phillip.newton@ki.se
 [2] https://pypi.org/project/MissForest/
 
 ## Citation
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15345157.svg)](https://doi.org/10.5281/zenodo.15440849)
+
 Miranda, P., Marchan Alvarez, J. G., & Newton, P. (2025). BioProEV - Biologically-relevant imputation of missing values in Proteomic analyses of Extracellular Vesicles. Zenodo. https://doi.org/10.5281/zenodo.15440849
+
+## Archived
+
+[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/pamella-miranda/AnalysePrimer/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/pamella-miranda/AnalysePrimer)[![SWH](https://archive.softwareheritage.org/badge/swh:1:dir:a717aa3dca248228ad3252d4e7f0a1dc454cbcd6/)](https://archive.softwareheritage.org/swh:1:dir:a717aa3dca248228ad3252d4e7f0a1dc454cbcd6;origin=https://github.com/pamella-miranda/AnalysePrimer;visit=swh:1:snp:b636b4a591928800c41f6da99cb1d3bea5ca2671;anchor=swh:1:rev:843c8e54cab2c975a581f141eeee9cc6686b5167)
+
