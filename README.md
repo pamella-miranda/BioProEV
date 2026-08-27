@@ -46,7 +46,7 @@ There are two code scripts to run BioProEV. For both, all arguments following th
 
 <br>
 
-python3.12  missing_data_filtering.py data_file  sheet  gene_column  sample_column#1  sample_column#2 threshold   file_path   file_name
+python3.12 &nbsp;&nbsp;&nbsp;&nbsp; missing_data_filtering.py &nbsp;&nbsp;&nbsp;&nbsp; data_file &nbsp;&nbsp;&nbsp;&nbsp;  sheet &nbsp;&nbsp;&nbsp;&nbsp;  gene_column &nbsp;&nbsp;&nbsp;&nbsp; sample_column#1 &nbsp;&nbsp;&nbsp;&nbsp; sample_column#2 &nbsp;&nbsp;&nbsp;&nbsp; threshold &nbsp;&nbsp;&nbsp;&nbsp; file_path &nbsp;&nbsp;&nbsp;&nbsp; file_name
 
 <br>
 
@@ -60,16 +60,15 @@ sample_column#1    : Number of the column with the first sample data
 sample_column#2    : Number of the column with the last sample data + 1 (e.g. column 12, so sample_column#2 = 13)
 threshold          : Threshold for deleting most missing data variables (e.g. deletion of variables with more than 50 % of missing values, use 0.6)*
 file_path 	       : Path to the folder where you will store the output file
-file_name 		    : Name of the output file
+file_name 	  	   : Name of the output file
 ```
-
 &nbsp;&nbsp;\* check the outcome datatable for the threshold, it usually works best with rounded values (i.e. 0.6, not 0.63), also the decimals will depend on the number of samples.
 
 <br>
   
 Example of command line:
 
-python3.12 missing_data_filtering.py raw_dataset.xlsx 2 2 7 13 0.6 ./output_folder output_file
+python3.12 &nbsp;&nbsp;&nbsp;&nbsp; missing_data_filtering.py &nbsp;&nbsp;&nbsp;&nbsp; raw_dataset.xlsx &nbsp;&nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp;&nbsp; 7 &nbsp;&nbsp;&nbsp;&nbsp; 13 &nbsp;&nbsp;&nbsp;&nbsp; 0.6 &nbsp;&nbsp;&nbsp;&nbsp; ./output_folder &nbsp;&nbsp;&nbsp;&nbsp; output_file
 
 <br>
 
@@ -93,13 +92,13 @@ Once you have the filtered data output, the next code will impute the missing da
 
 <br>
 
-python3.12   random_forest_imputation.py   data_file   sheet   file_path   file_name
+python3.12 &nbsp;&nbsp;&nbsp;&nbsp; random_forest_imputation.py &nbsp;&nbsp;&nbsp;&nbsp; data_file &nbsp;&nbsp;&nbsp;&nbsp; sheet &nbsp;&nbsp;&nbsp;&nbsp; file_path  &nbsp;&nbsp;&nbsp;&nbsp; file_name
 
 <br>
 
 where:
 ```text
-data_file 	: File with the filtered data (in .xlsx) from the previous code
+data_file     : File with the filtered data (in .xlsx) from the previous code
 file_path	  : Path to the folder where you will store the output file
 file_name	  : Name of the output file
 ```
@@ -107,9 +106,25 @@ file_name	  : Name of the output file
 
 Example of command line:
 
-python3.12 &nbsp;&nbsp;&nbsp;&nbsp; random_forest_imputation.py filtered_data.xlsx 2 ./output_folder output_file
+python3.12 &nbsp;&nbsp;&nbsp;&nbsp; random_forest_imputation.py &nbsp;&nbsp;&nbsp;&nbsp; filtered_data.xlsx &nbsp;&nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp;&nbsp; ./output_folder &nbsp;&nbsp;&nbsp;&nbsp; output_file
 
 Note that the Random Forest algorithm here uses the data matrix as sample x variables (i.e. rows x columns). In the output file from the filtering step (previous code script) it will be stored on the sheet 2.
+
+| Gene      | Smpdl3b | Lamc1 | Bgn | Emilin1 | Pgam1 | G3bp1 |
+| --------- | ------: | ----: | --: | ------: | ----: | ----: |
+| Sample 01 |       9 |    81 |  64 |      80 |    10 |     4 |
+| Sample 02 |      13 |   104 |  77 |      77 |    12 |     3 |
+| Sample 03 |       7 |    82 |  82 |      92 |    13 |     6 |
+| Sample 04 |      23 |    86 |  80 |      70 |    21 |    12 |
+| Sample 05 |      16 |   100 | 124 |      73 |    26 |    15 |
+| Sample 06 |      20 |   134 | 102 |      89 |    23 |     8 |
+
+## Output
+There will be an output file for each code:
+
+* From missing_values_filtering.py: the output file will have four sheets containing “raw data”, “filtered data”, “transpose filtered data” and “missdata info”, where you will find information about the missing data.
+    
+* From random_forest_imputation.py: the output file will have two sheets containing “imputed data” and “transpose imputed data”.
 
 ## Authors
 Pâmella Miranda --- pamella.mm@gmail 
@@ -120,6 +135,7 @@ Phillip Newton --- phillip.newton@ki.se
 
 ## References
 [1] Yuen, S. Y. H. (2024). yuenshingyan/MissForest: MissForest in Python – Arguably the best missing values imputation method. Version v1.0.0. doi:10.5281/zenodo.13368883. [Computer software].
+
 [2] https://pypi.org/project/MissForest/
 
 ## Citation
