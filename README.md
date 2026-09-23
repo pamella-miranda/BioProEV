@@ -142,3 +142,7 @@ Phillip Newton --- phillip.newton@ki.se
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15345157.svg)](https://doi.org/10.5281/zenodo.15440849)
 
 Miranda, P., Marchan Alvarez, J. G., & Newton, P. (2025). BioProEV - Biologically-relevant imputation of missing values in Proteomic analyses of Extracellular Vesicles. Zenodo. https://doi.org/10.5281/zenodo.15440849
+
+## Archived
+
+[![Software Heritage](https://archive.softwareheritage.org/badge/origin/https://github.com/pamella-miranda/BioProEV/)](https://archive.softwareheritage.org/browse/origin/https://github.com/pamella-miranda/BioProEV/)
