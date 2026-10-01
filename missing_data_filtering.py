@@ -18,7 +18,7 @@
 #       file_name        : Output file
 #
 #   Usage:
-#       python3.12 missing_data_filtering.py dataset sheet gene_column sample_column#1 sample_column#2 
+#       python3.12 missing_data_filtering.py data_file sheet gene_column sample_column#1 sample_column#2 
 #   threshold file_path file_name
 #
 #   Developed and tested with Python 3.12; other versions may work but are untested.
